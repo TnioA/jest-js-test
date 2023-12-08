@@ -1,15 +1,13 @@
-import { fechBosta, fechSomething } from "./index.js";
-
-test('Testing fechBosta()', () => {
-    const data = fechBosta(1);
-
-    expect(data).toBe(2);
-});
-
-
+import { fechSomething, fechSomethingMore } from "./index.js";
 
 test('Testing fechSomething()', async () => {
-    const data = await fechSomething("http://192.168.0.12:30000/bets/bestnumber");
+    const data = await fechSomething("https://api.escuelajs.co/api/v1/products");
 
     expect(data !== null).toBe(true);
+});
+
+test('Testing fechSomethingMore()', () => {
+    const data = fechSomethingMore(1);
+
+    expect(data).toBe(2);
 });

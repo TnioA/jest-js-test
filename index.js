@@ -6,7 +6,6 @@ export async function fechSomething(url) {
     return result;
 }
 
-
-export function fechBosta(number) {
+export function fechSomethingMore(number) {
     return number + 1;
 }
